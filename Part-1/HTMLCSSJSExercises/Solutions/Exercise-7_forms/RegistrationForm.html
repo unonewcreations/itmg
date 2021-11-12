@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="http://httpbin.org/post" method="post">
+      <input type="hidden" id="emailMe" value="unonewcreations@gmail.com" />
+
+      <div>
+        <label for="username"
+          >Username:
+          <input type="text" id="Username" name="username" />
+        </label>
+      </div>
+
+      <div>
+        <label for="pw"
+          >Password:
+          <input type="password" id="pw" name="pw" />
+        </label>
+      </div>
+
+      <button value="register">Register</button>
+      <button>Opnieuw instellen</button>
+    </form>
+  </body>
+</html>

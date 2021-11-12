@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Conditionals</title>
+<script type="text/javascript">
+function greetUser(){
+	var gender, lastName;
+	
+	gender = prompt("Are you Male or Female?", "") || "";
+	if (gender.toLowerCase() != "male" && gender.toLowerCase() != "female") {
+		gender = prompt("Try again: Male or Female?", "") || "";
+	}
+	
+	lastName = prompt("What's your last name?", "");
+	if (lastName.length === 0) {
+		lastName = prompt("You must have a last name.  Please re-enter:", "");
+	} else if (! isNaN(lastName)) {
+		lastName = prompt("A last name can't be a number.  Please re-enter:", "");
+	} else if (lastName.substr(0, 1) == lastName.substr(0, 1).toLowerCase()) {
+		lastName = prompt("The first letter must be capitalized.  Re-enter:", "") || "";
+	}
+	
+	switch (gender.toLowerCase()) {
+	case "male" :
+		alert("Hello Mr. " + lastName + "!");
+		break;
+	case "female" :
+		alert("Hello Ms. " + lastName + "!");
+		break;
+	default :
+		alert(gender + " is not a gender!");
+	}
+}
+</script>
+</head>
+<body onload="greetUser();">
+	<p>Nothing to show here.</p>
+</body>
+</html>

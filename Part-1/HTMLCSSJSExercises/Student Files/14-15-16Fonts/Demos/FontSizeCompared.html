@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Font-size</title>
+<style type="text/css">
+	td {
+		padding-left:10px;
+		padding-right:10px;
+		font-family:Verdana;
+	}
+	
+	#units {
+		position:absolute;
+		left:350px;
+		top:20px;
+	}
+	
+	#relative {
+		position:absolute;
+		left:20px;
+		top:370px;
+	}
+	
+	caption {
+		font-weight:bold;
+	}
+	
+	.caption {
+		font-weight:bold;
+		position:absolute;
+		top:-30px;
+		left:-5px;
+		width:200px;
+	}
+</style>
+</head>
+
+<body>
+<table id="units" border="1" cellpadding="4" cellspacing="0">
+<caption>Font-size Defined in Units</caption>
+	<tr>
+		<td>px</td>
+		<td>16px</td>
+		<td style="font-size:19px">Hello World!</td>
+	</tr>
+	<tr>
+		<td>pt</td>
+		<td>12pt</td>
+		<td style="font-size:14pt">Hello World!</td>
+	</tr>
+	<tr>
+		<td>in</td>
+		<td>.16in</td>
+		<td style="font-size:.2in">Hello World!</td>
+	</tr>
+	<tr>
+		<td>cm</td>
+		<td>.4cm</td>
+		<td style="font-size:.51cm">Hello World!</td>
+	</tr>
+	<tr>
+		<td>mm</td>
+		<td>4mm</td>
+		<td style="font-size:5.1mm">Hello World!</td>
+	</tr>
+	<tr>
+		<td>pc</td>
+		<td>1pc</td>
+		<td style="font-size:1.2pc">Hello World!</td>
+	</tr>
+	<tr>
+		<td>em</td>
+		<td>1em</td>
+		<td style="font-size:1.2em">Hello World!</td>
+	</tr>
+	<tr>
+		<td>ex</td>
+		<td>2ex</td>
+		<td style="font-size:2.4ex">Hello World!</td>
+	</tr>
+	<tr>
+		<td>%</td>
+		<td>100%</td>
+		<td style="font-size:120%">Hello World!</td>
+	</tr>
+</table>
+
+
+<table id="relative" border="1" cellpadding="4" cellspacing="0">
+<caption>Font-size Defined Relatively</caption>
+
+	<tr>
+		<td>xx-large</td>
+		<td style="font-size:xx-large">Hello World!</td>
+		<td><font size="7">Hello World!</font></td>
+	</tr>
+	<tr>
+		<td>x-large</td>
+		<td style="font-size:x-large">Hello World!</td>
+		<td><font size="6">Hello World!</font></td>
+	</tr>
+	<tr>
+		<td>large</td>
+		<td style="font-size:large">Hello World!</td>
+		<td><font size="5">Hello World!</font></td>
+	</tr>
+	<tr>
+		<td>medium</td>
+		<td style="font-size:medium">Hello World!</td>
+		<td><font size="4">Hello World!</font></td>
+	</tr>
+	<tr>
+		<td>small</td>
+		<td style="font-size:small">Hello World!</td>
+		<td><font size="3">Hello World!</font></td>
+	</tr>
+	<tr>
+		<td>x-small</td>
+		<td style="font-size:x-small">Hello World!</td>
+		<td><font size="2">Hello World!</font></td>
+	</tr>
+	<tr>
+		<td>xx-small</td>
+		<td style="font-size:xx-small">Hello World!</td>
+		<td><font size="1">Hello World!</font></td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<div id="smaller">
+				This text is <span style="font-size:smaller">smaller and
+				<span style="font-size:smaller">even smaller and
+				<span style="font-size:smaller">even smaller</span>
+				</span></span>.
+			</div>
+			
+			<div id="larger">
+				This text is <span style="font-size:larger">larger and
+				<span style="font-size:larger">even larger and
+				<span style="font-size:larger">even larger</span>
+				</span></span>.
+			</div>
+		</td>
+	</tr>
+</table>
+
+<div style="position:absolute; top:56px; left:120px">
+	<div class="caption">Widths in Units</div>
+	<div style="position:absolute; top:0px; width:1in; left:0px; background:red;">1 in</div>
+	<div style="position:absolute; top:30px; width:2.54cm; left:0px; background:blue;">2.54cm</div>
+	<div style="position:absolute; top:60px; width:25.4mm; left:0px; background:green;">25.4mm</div>
+	<div style="position:absolute; top:90px; width:96px; left:0px; background:yellow;">96px</div>
+	<div style="position:absolute; top:120px; width:72pt; left:0px; background:silver;">72pt</div>
+	<div style="position:absolute; top:150px; width:6pc; left:0px; background:orange;">6pc</div>
+	<div style="position:absolute; top:180px; width:6em; left:0px; background:brown;">6em</div>
+	<div style="position:absolute; top:210px; width:12ex; left:0px; background:lightblue;">12ex</div>
+</div>
+</body>
+</html>

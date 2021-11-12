@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Operators</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	var rockStars = [];
+	var cdTotals = [];
+	rockStars[0] = prompt("Who is your favorite rock star?", "");
+	cdTotals[0] = prompt("How many " + rockStars[0] + " albums do you own?", "");
+	rockStars[1] = prompt("And your next favorite rock star?", "");
+	cdTotals[1] = prompt("How many " + rockStars[1] + " albums do you own?", "");
+</script>
+</head>
+<body>
+	<script type="text/javascript">
+	var diff = cdTotals[0] - cdTotals[1];
+	document.write("You have " + diff + " more albums of " + rockStars[0]);
+	document.write(" than you have of " + rockStars[1] + ".");
+	</script>
+</body>
+</html>

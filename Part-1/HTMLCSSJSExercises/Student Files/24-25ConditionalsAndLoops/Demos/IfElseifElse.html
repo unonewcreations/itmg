@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Conditionals Demo</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	function checkAge(){
+		var age = prompt("Your age?", "") || "";
+		
+		if (age >= 21) {
+			alert("You can vote and drink!");
+		} else if (age >= 18) {
+			alert("You can vote, but can't drink.");
+		} else {
+			alert("You cannot vote or drink.");
+		}
+	}
+</script>
+</head>
+<body>
+<h1>JavaScript if - else if - else Demo</h1>
+<h2>Age Check</h2>
+<form>
+	<input type="button" value="Age Check" onclick="checkAge();">
+</form>
+</body>
+</html>

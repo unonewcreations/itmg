@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>isNaN() Function</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table>
+<tr>
+	<th>Function</th><th>Result</th>
+</tr>
+<script type="text/javascript">
+	document.write("<tr><td>isNaN(4)</td>");
+	document.write("<td>" + isNaN(4) + "</td></tr>");
+	document.write("<tr><td>isNaN(\"4\")</td>");
+	document.write("<td>" + isNaN("4") + "</td></tr>");
+	document.write("<tr><td>isNaN(0/0)</td>");
+	document.write("<td>" + isNaN(0/0) + "</td></tr>");
+	document.write("<tr><td>isNaN(\"hello\")</td>");
+	document.write("<td>" + isNaN("hello") + "</td></tr>");
+	var strAge = "twelve";
+	document.write("<tr><td>isNaN(strAge)</td>");
+	document.write("<td>" + isNaN(strAge) + "</td></tr>");
+	var intAge = 12;
+	document.write("<tr><td>isNaN(intAge)</td>");
+	document.write("<td>" + isNaN(intAge) + "</td></tr>");
+</script>
+</table>
+</body>
+</html>
+

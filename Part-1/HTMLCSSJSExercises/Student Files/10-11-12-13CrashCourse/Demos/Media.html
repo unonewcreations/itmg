@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS Media</title>
+<style type="text/css" media="screen">
+	.warning {color:#ff0000}
+	h1.warning {text-decoration:underline}
+	p.warning {font-weight:bold}
+	.printDisplay {display:none}
+</style>
+<style type="text/css" media="print">
+	.warning {color:#660000;}
+	h1.warning {text-decoration:underline; font-size:1in;}
+	p.warning {font-weight:bold; font-size:.5in;}
+	.screenDisplay {display:none}
+</style>
+</head>
+<body>
+<h1 class="warning">WARNING</h1>
+<p class="warning">Don't go there!</p>
+<p class="printDisplay">This is the print version.</p>
+<p class="screenDisplay">This is the screen version.</p>
+</body>
+</html>

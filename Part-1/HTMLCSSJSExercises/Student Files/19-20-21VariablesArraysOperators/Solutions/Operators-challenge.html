@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Operators</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	var userNum1 = window.prompt("Choose a number.", "");
+	alert("You chose " + userNum1);
+	var userNum2 = window.prompt("Choose another number.", "");
+	alert("You chose " + userNum2);
+	var numsAdded = Number(userNum1) + Number(userNum2);
+	var numsSubtracted = userNum1 - userNum2;
+	var numsMultiplied = userNum1 * userNum2;
+	var numsDivided = userNum1 / userNum2;
+	var numsModulused = userNum1 % userNum2;
+</script>
+</head>
+<body>
+<ul>
+	<script type="text/javascript">
+		document.write("<li>" + userNum1 + " + " + userNum2 + " = ");
+			document.write(numsAdded + "</li>");
+		document.write("<li>" + userNum1 + " - " + userNum2 + " = ");
+			document.write(numsSubtracted + "</li>");
+		document.write("<li>" + userNum1 + " * " + userNum2 + " = ");
+			document.write(numsMultiplied + "</li>");
+		document.write("<li>" + userNum1 + " / " + userNum2 + " = ");
+			document.write(numsDivided + "</li>");
+		document.write("<li>" + userNum1 + " % " + userNum2 + " = ");
+			document.write(numsModulused + "</li>");
+	</script>
+</ul>
+</body>
+</html>

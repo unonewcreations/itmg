@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Strictly Equals vs. Plain ole Equals</title>
+</head>
+<body>
+<ul style="font-size:x-large;">
+	<li>Equals:
+		<ul>
+			<li>0 == false:
+				<script type="text/javascript">
+					document.write(0 == false);
+				</script>
+			</li>
+			<li>0 == "":
+				<script type="text/javascript">
+					document.write(0 == "");
+				</script>
+			</li>
+			<li>5 == "5":
+				<script type="text/javascript">
+					document.write(5 == "5");
+				</script>
+			</li>
+		</ul>
+	</li>
+	<li>Strictly Equals:
+		<ul>
+			<li>0 === false:
+				<script type="text/javascript">
+					document.write(0 === false);
+				</script>
+			</li>
+			<li>0 === "":
+				<script type="text/javascript">
+					document.write(0 === "");
+				</script>
+			</li>
+			<li>5 === "5":
+				<script type="text/javascript">
+					document.write(5 === "5");
+				</script>
+			</li>
+		</ul>
+	</li>
+</ul>
+</body>
+</html>

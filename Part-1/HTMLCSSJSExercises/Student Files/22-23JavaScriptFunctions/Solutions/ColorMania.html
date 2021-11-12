@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Colormania</title>
+<script type="text/javascript">
+	var userName = prompt("Your name?", "");
+
+	function changeBg(color){
+		document.bgColor = color;
+		alert(userName + ", the background color is " + color + ".");
+	}
+</script>
+</head>
+<body>
+<form>
+	<input type="button" value="red" onclick="changeBg('red');">
+	<input type="button" value="green" onclick="changeBg('green');">
+	<input type="button" value="blue" onclick="changeBg('blue');">
+	<input type="button" value="orange" onclick="changeBg('orange');">
+</form>
+</body>
+</html>

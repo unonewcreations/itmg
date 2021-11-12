@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Arrays</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	//Pop up four prompts and create an array
+	var userColors = new Array();
+	userColors[0] = window.prompt("Choose a color.", "");
+	userColors[1] = window.prompt("Choose a color.", "");
+	userColors[2] = window.prompt("Choose a color.", "");
+	userColors[3] = window.prompt("Choose a color.", "");
+</script>
+</head>
+<body>
+<p>
+	<span onclick="document.bgColor = userColors[0];">
+	<script type="text/javascript">
+		document.write(userColors[0]);
+	</script>
+	</span> |
+	<span onclick="document.bgColor = userColors[1];">
+	<script type="text/javascript">
+		document.write(userColors[1]);
+	</script>
+	</span> |
+	<span onclick="document.bgColor = userColors[2];">
+	<script type="text/javascript">
+		document.write(userColors[2]);
+	</script>
+	</span> |
+	<span onclick="document.bgColor = userColors[3];">
+	<script type="text/javascript">
+		document.write(userColors[3]);
+	</script>
+	</span>
+</p>
+</body>
+</html>

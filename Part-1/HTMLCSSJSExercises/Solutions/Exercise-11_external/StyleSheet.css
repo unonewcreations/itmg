@@ -1,0 +1,49 @@
+body {
+  background-image: url("Images/Baseball.gif");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-position: fixed;
+  margin-left: 50%;
+  margin-top: 20px;
+}
+
+div {
+  padding: 10px;
+  border: 10px groove red;
+  width: 300px;
+  background-image: url("Images/YankeeStadium.gif");
+  margin-left: -170px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 12pt;
+  color: #000099;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+table {
+  margin: 5px;
+  width: 290px;
+}
+
+th {
+  padding: 3px;
+}
+
+td {
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid #990000;
+  background-color: #ffffcc;
+}
+
+#trHeader {
+  text-decoration: underline;
+  color: #990000;
+}
+
+.centerCell {
+  text-align: center;
+}

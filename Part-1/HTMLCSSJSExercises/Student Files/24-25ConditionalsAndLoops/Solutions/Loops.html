@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Loops</title>
+<script type="text/javascript">
+function greetUser(){
+	var gender, lastName, greeting;
+	var presidents = ["Washington", "Jefferson", "Lincoln", "Kennedy"];
+	
+	do {
+		gender = prompt("What gender are you: Male or Female?", "") || "";
+	} while (gender.toLowerCase() != "male" && gender.toLowerCase() != "female");
+	
+	do {
+		lastName = prompt("Enter your last name:", "") || "";
+	} while (lastName.length === 0 || ! isNaN(lastName));
+	
+	switch (gender.toLowerCase()) {
+	case "male" :
+		greeting = "Hello Mr. " + lastName + "!";
+		break;
+	case "female" :
+		greeting = "Hello Ms. " + lastName + "!";
+		break;
+	default :
+		greeting = "Hello Stranger!";
+	}
+
+	for (var pres in presidents) {
+		if (lastName.toLowerCase() == presidents[pres].toLowerCase()) {
+			alert(greeting + " You have the same last name as a president!");
+		}
+	}
+}
+</script>
+</head>
+<body onload="greetUser();">
+	<p>Nothing to show here.</p>
+</body>
+</html>

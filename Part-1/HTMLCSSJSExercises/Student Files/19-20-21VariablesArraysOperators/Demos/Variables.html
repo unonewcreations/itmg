@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Variables</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	//Pop up a prompt
+	var userColor = window.prompt("Enter a color.", "");
+</script>
+</head>
+<body>
+<p>
+	<span onclick="document.bgColor = 'red';">Red</span> |
+	<span onclick="document.bgColor = 'white';">White</span> |
+	<span onclick="document.bgColor = 'green';">Green</span> |
+	<span onclick="document.bgColor = 'blue';">Blue</span> |
+	<span onclick="document.bgColor = userColor;">
+	<script type="text/javascript">
+		document.write(userColor);
+	</script>
+	</span>
+</p>
+</body>
+</html>

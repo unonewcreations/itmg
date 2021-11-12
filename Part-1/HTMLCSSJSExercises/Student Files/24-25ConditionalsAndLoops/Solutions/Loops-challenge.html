@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Loops</title>
+<script type="text/javascript">
+function greetUser(){
+	var gender, lastName, greeting;
+	var presidents = ["Washington", "Jefferson", "Lincoln", "Kennedy"];
+	
+	var repeat = false;
+
+	do {
+		if (!repeat) {
+			gender = prompt("What gender are you: Male or Female?", "") || "";
+			repeat = true;
+		} else {
+			gender = prompt("You must enter 'Male' or 'Female'.  Try again:", "") || "";
+		}
+	} while (typeof gender != "string"
+		|| (gender.toLowerCase() != "male"
+		&& gender.toLowerCase() != "female"));
+
+	repeat = false;
+
+	do {
+		if (!repeat) {
+			lastName = prompt("Enter your last name:", "") || "";
+			repeat=true;
+		} else {
+			lastName = prompt("Please enter a valid last name:", "") || "";
+		}
+	} while (typeof lastName != "string"
+		|| (lastName.length === 0
+		|| ! isNaN(lastName)));
+
+	switch (gender.toLowerCase()) {
+	case "male" :
+		greeting = "Hello Mr. " + lastName + "!";
+		break;
+	case "female" :
+		greeting = "Hello Ms. " + lastName + "!";
+		break;
+	default :
+		greeting = "Hello Stranger!";
+	}
+
+	var match = false;
+
+	for (var pres in presidents) if (presidents.hasOwnProperty(pres)) {
+		if (lastName.toLowerCase() == presidents[pres].toLowerCase()) {
+			alert(greeting + " You have the same last name as a president!");
+			match = true;
+		}
+	}
+
+	if (!match) {
+		alert(greeting + " Your last name is not presidential.");
+	}
+}
+</script>
+</head>
+<body onload="greetUser();">
+	<p>Nothing to show here.</p>
+</body>
+</html>

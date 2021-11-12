@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Arrays</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	var rockStars = new Array();
+	rockStars[0] = window.prompt("Who is your favorite rock star?", "");
+	rockStars[1] = window.prompt("And your next favorite rock star?", "");
+	rockStars[2] = window.prompt("And your next favorite rock star?", "");
+	rockStars[3] = window.prompt("And your next favorite rock star?", "");
+</script>
+</head>
+<body>
+<form>
+	<input type="button" value="Favorite" onclick="alert(rockStars[0]);">
+	<input type="button" value="Next Favorite" onclick="alert(rockStars[1]);">
+	<input type="button" value="Next Favorite" onclick="alert(rockStars[2]);">
+	<input type="button" value="Next Favorite" onclick="alert(rockStars[3]);">
+</form>
+</body>
+</html>

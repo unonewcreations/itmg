@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Loops</title>
+<script type="text/javascript">
+	var index;
+	var beatles = [];
+	beatles["Guitar1"] = "John";
+	beatles["Bass"] = "Paul";
+	beatles["Guitar2"] = "George";
+	beatles["Drums"] = "Ringo";
+	var ramones = ["Joey", "Johnny", "Dee Dee", "Mark"];
+</script>
+</head>
+<body>
+<h1>JavaScript Loops</h1>
+<h2>while Loop</h2>
+<script type="text/javascript">
+index = 0;
+while (index < 5) {
+   document.write(index);
+   index++;
+}
+</script>
+
+<h2>do...while Loop</h2>
+<script type="text/javascript">
+index = 1;
+do {
+   document.write(index);
+   index++;
+} while (index < 5);
+</script>
+
+<h2>for Loop</h2>
+<script type="text/javascript">
+for (index=0; index<=5; index++) {
+	document.write(index);
+}
+</script>
+
+<h2>for Loop with Arrays</h2>
+<ol>
+<script type="text/javascript">
+var len = ramones.length;
+for (var index=0; index<len; index++) {
+	document.write("<li>" + ramones[index] + "</li>");
+}
+</script>
+</ol>
+
+<h2>for...in Loop</h2>
+<ol>
+<script type="text/javascript">
+for (var prop in beatles) {
+		document.write("<li>" + prop + " : " + beatles[prop] + "</li>");
+}
+</script>
+</ol>
+</body>
+</html>

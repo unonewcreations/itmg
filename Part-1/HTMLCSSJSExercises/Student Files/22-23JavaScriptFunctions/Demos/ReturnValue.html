@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Returning a Value</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function setBgColor(){
+	document.bgColor = prompt("Set Background Color:", ""); 
+}
+
+function getBgColor(){
+	return document.bgColor;
+}
+</script>
+</head>
+<body>
+<form>
+	<input type="button" value="Set Background Color"
+		onclick="setBgColor();">
+	<input type="button" value="Get Background Color" 
+		onclick="alert(getBgColor());">
+</form>
+</body>
+</html>

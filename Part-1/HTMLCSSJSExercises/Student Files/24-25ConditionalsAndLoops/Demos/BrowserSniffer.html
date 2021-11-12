@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Simple Browser Sniffer</title>
+<script type="text/javascript">
+	switch (navigator.appName) {
+		case "Microsoft Internet Explorer" :
+			alert("This is IE!");
+			break;
+		case "Opera" :
+			alert("This is Opera!");
+			break;
+		default :
+			alert("This is something other than IE or Opera!");
+	}
+</script>
+</head>
+<body>
+	<p>Your browser's <code>navigator.appName</code> is:
+		<script type="text/javascript">
+			document.write(navigator.appName);
+		</script>.
+	</p>
+</body>
+</html>

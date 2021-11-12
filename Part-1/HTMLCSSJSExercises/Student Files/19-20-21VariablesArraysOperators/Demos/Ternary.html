@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ternary Operator</title>
+<script type="text/javascript">
+	var num = prompt("Enter a number.","");
+	
+	//without ternary:
+	if (num % 2 == 0) {
+		alert(num + " is even.");
+	} else {
+		alert(num + " is odd.");
+	}
+	
+	//with ternary:
+	var term = num % 2 == 0 ? "even" : "odd";
+	alert(num + " is " + term);
+</script>
+</head>
+<body>
+<p>Nothing to show here.</p>
+</body>
+</html>

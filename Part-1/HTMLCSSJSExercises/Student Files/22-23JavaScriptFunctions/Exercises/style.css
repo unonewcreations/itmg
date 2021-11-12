@@ -1,0 +1,12 @@
+table {
+	margin:auto;	
+}
+
+td, th {
+	border:1px solid #006;
+}
+
+p, form {
+	text-align:center;
+	font-size:large;
+}
