@@ -1,21 +1,30 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Colormania</title>
-<script type="text/javascript">
-	//PROMPT USER FOR NAME
-	
-	/*
-	Write a function called changeBg() that changes the background
-	color and then pops up an alert telling the user, by name, what
-	the new background color is.
-	*/
-</script>
-</head>
-<body>
-<form>
-	<!--ADD BUTTONS HERE-->
-</form>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Colormania</title>
+    <script type="text/javascript">
+      //PROMPT USER FOR NAME
+
+      /*
+      Write a function called changeBg() that changes the background
+      color and then pops up an alert telling the user, by name, what
+      the new background color is.
+      */
+      function changeBg(color) {
+        var name = window.prompt("Give your name");
+        document.bgColor = color;
+        alert(`Your name is ${name} and your new color is ${color}`);
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <!--ADD BUTTONS HERE-->
+      <input type="button" value="red" onclick="changeBg('red');" />
+      <input type="button" value="green" onclick="changeBg('green');" />
+      <input type="button" value="blue" onclick="changeBg('blue');" />
+      <input type="button" value="orange" onclick="changeBg('orange');" />
+    </form>
+  </body>
 </html>
